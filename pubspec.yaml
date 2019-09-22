@@ -17,6 +17,7 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  dots_indicator: ^1.0.0
   flutter_svg: ^0.14.1
   dio: ^3.0.1
   rxdart: ^0.22.2

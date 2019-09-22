@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 import 'card/card_widget.dart';
@@ -5,11 +6,35 @@ import 'card/card_widget.dart';
 class CardListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return PageView(
-      scrollDirection: Axis.horizontal,
-      children: <Widget>[
-        Card1(),
-      ],
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          SingleChildScrollView(
+            physics: PageScrollPhysics(),
+            child: Row(
+              children: <Widget>[
+                Card1(),
+              ],
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              DotsIndicator(
+                dotsCount: 3,
+                position: 0,
+                decorator: DotsDecorator(
+                  size: Size(4, 4),
+                  activeSize: Size(5, 5),
+                  color: Colors.white54,
+                  activeColor: Colors.white,
+                ),
+              )
+            ],
+          )
+        ],
+      ),
     );
   }
 }

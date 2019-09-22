@@ -7,16 +7,16 @@ class CardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(
-        horizontal: 20,
-        vertical: MediaQuery.of(context).size.height * 0.15,
+      width: MediaQuery.of(context).size.width,
+      padding: EdgeInsets.symmetric(
+        horizontal: MediaQuery.of(context).size.width * 0.05,
       ),
       child: Card(
         color: Colors.white,
         child: ClipRRect(
           borderRadius: BorderRadius.circular(5),
           child: AspectRatio(
-            aspectRatio: 1,
+            aspectRatio: 7/8,
             child: child,
           ),
         ),
