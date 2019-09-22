@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nubank_layout/src/shared/widgets/button/button_widget.dart';
 import '../card/card_widget.dart';
 
 class Card3 extends StatelessWidget {
@@ -29,22 +30,9 @@ class Card3 extends StatelessWidget {
                 ),
               ),
               Spacer(),
-              Container(
-                width: double.infinity,
-                alignment: Alignment.center,
-                padding: EdgeInsets.symmetric(vertical: 20),
-                margin: EdgeInsets.symmetric(horizontal: 5),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5),
-                  border: Border.all(color: Theme.of(context).primaryColor),
-                ),
-                child: Text(
-                  "ATIVE O SEU REWARDS",
-                  style: TextStyle(
-                    color: Theme.of(context).primaryColor,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+              ButtonWidget(
+                text: "ATIVE O SEU REWARDS",
+                color: Theme.of(context).primaryColor,
               ),
             ],
           ),
