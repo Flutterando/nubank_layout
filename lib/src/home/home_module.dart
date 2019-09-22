@@ -1,3 +1,5 @@
+import 'package:nubank_layout/src/home/card_list/card/card_bloc.dart';
+import 'package:nubank_layout/src/home/card_list/card_list_bloc.dart';
 import 'package:nubank_layout/src/home/bottom_list/bottom_list_bloc.dart';
 import 'package:nubank_layout/src/home/logo/logo_bloc.dart';
 import 'package:nubank_layout/src/home/home_bloc.dart';
@@ -8,6 +10,8 @@ import 'package:nubank_layout/src/home/home_page.dart';
 class HomeModule extends ModuleWidget {
   @override
   List<Bloc> get blocs => [
+        Bloc((i) => CardBloc()),
+        Bloc((i) => CardListBloc()),
         Bloc((i) => BottomListBloc()),
         Bloc((i) => LogoBloc()),
         Bloc((i) => HomeBloc()),

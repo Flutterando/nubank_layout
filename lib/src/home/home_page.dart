@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'bottom_list/bottom_list_widget.dart';
+import 'card_list/card_list_widget.dart';
 import 'logo/logo_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,11 +19,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: <Widget>[
               LogoWidget(),
-              Expanded(
-                child: Container(
-                  color: Colors.white,
-                ),
-              ),
+              Expanded(child: CardListWidget()),
               BottomListWidget(),
             ],
           ),
@@ -31,4 +28,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
