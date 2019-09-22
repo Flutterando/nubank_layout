@@ -14,7 +14,7 @@ class _ConfigPageState extends State<ConfigPage> {
         textColor: Colors.white,
         iconColor: Colors.white,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 40),
+          padding: const EdgeInsets.fromLTRB(40, 0, 40, 40),
           child: Column(
             children: <Widget>[
               SizedBox(height: 15),
