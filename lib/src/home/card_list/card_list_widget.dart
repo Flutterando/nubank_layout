@@ -8,7 +8,7 @@ class CardListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Transform.translate(
-      offset: Offset(0, -90),
+      offset: Offset(0, -50),
       child: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
