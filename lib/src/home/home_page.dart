@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage>
                               MediaQuery.of(context).size.height * 1.5;
                         },
                         onVerticalDragEnd: (details) {
-                          if (controller.value > 0.5)
+                          if (controller.value > 0.3)
                             controller.forward();
                           else
                             controller.reverse();
