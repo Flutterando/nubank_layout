@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
+import 'bottom_list/bottom_list_widget.dart';
 import 'logo/logo_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,15 +13,22 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: SafeArea(
-        child: Column(
-          children: <Widget>[
-            SizedBox(height: 25),
-            LogoWidget()
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 25),
+          child: Column(
+            children: <Widget>[
+              LogoWidget(),
+              Expanded(
+                child: Container(
+                  color: Colors.white,
+                ),
+              ),
+              BottomListWidget(),
+            ],
+          ),
         ),
       ),
     );
   }
 }
-
 

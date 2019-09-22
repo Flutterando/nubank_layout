@@ -9,7 +9,7 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xFF84269C),
         canvasColor: Color(0xFF84269C),
-        cardColor: Color(0xFF9241A7),
+        cardColor: Color(0xFF9241A7), //Colors.white54
       ),
       home: HomeModule(),
     );

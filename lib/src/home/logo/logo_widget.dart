@@ -8,21 +8,31 @@ class LogoWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return Column(
+      mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        SvgPicture.asset(
-          "assets/logo.svg",
-          color: Colors.white,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            SvgPicture.asset(
+              "assets/logo.svg",
+              color: Colors.white,
+            ),
+            SizedBox(width: 10),
+            Text(
+              "Wallace",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 23,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
         ),
-        SizedBox(width: 10),
-        Text(
-          "Wallace",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 23,
-            fontWeight: FontWeight.bold,
-          ),
+        Icon(
+          Icons.keyboard_arrow_down,
+          color: Colors.white.withOpacity(0.54),
+          size: 35,
         ),
       ],
     );
