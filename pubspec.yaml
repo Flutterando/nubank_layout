@@ -19,7 +19,7 @@ environment:
 dependencies:
   dots_indicator: ^1.0.0
   flutter_svg: ^0.14.1
-  dio: ^3.0.1
+  #dio: ^3.0.1
   rxdart: ^0.22.2
   bloc_pattern: ^2.3.2
   flutter:
